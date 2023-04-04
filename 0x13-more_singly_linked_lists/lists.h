@@ -1,10 +1,9 @@
-#ifndef _main_h_
-#define _main_h_
+#ifndef _lists_h_
+#define _lists_h_
 
 /**
- * This scripts configures the main header file
- */
-
+ * This scripts contains all the prototypes of all functions including header files.
+*/
 int _putchar(char);
 void print_alphabet(void);
 void print_alphabet_x10(void);
