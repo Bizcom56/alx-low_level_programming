@@ -19,7 +19,7 @@ void free_dlistint(dlistint_t *head)
 {
     dlistint_t *tmp;
 
-    /* Check if the list is not empty/
+    /* Check if the list is not empty */
     if (head != NULL)
     {
         /* Traverse to the first node (if not already) */
