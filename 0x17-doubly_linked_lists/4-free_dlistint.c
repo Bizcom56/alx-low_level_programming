@@ -17,24 +17,24 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-    dlistint_t *tmp;
+	dlistint_t *tmp;
 
-    /* Check if the list is not empty */
-    if (head != NULL)
-    {
-        /* Traverse to the first node (if not already) */
-        while (head->prev != NULL)
-            head = head->prev;
-    }
+	/* Check if the list is not empty */
+	if (head != NULL)
+	{
+		/* Traverse to the first node (if not already) */
+		while (head->prev != NULL)
+			head = head->prev;
+	}
 
     /* Free each node of the list */
-    while ((tmp = head) != NULL)
-    {
-        /* Update head to the next node */
-        head = head->next;
+	while ((tmp = head) != NULL)
+	{
+		/* Update head to the next node */
+		head = head->next;
 
-        /* Free the current node */
-        free(tmp);
-    }
+		/* Free the current node */
+		free(tmp);
+	}
 }
 
