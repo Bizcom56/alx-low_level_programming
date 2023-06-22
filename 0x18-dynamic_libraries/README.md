@@ -1,1 +1,0 @@
-# Dynamic libraries in C
