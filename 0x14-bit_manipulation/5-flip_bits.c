@@ -1,24 +1,20 @@
 #include "main.h"
 
 /**
- * flip_bits - Calculates the number of differing bits between two numbers.
+ * flip_bits - Calculates the number of
+ * differing bits between two numbers.
+ * @num1: number one.
+ * @num2: number two.
  *
- * This function computes the count of bits that need to be flipped to transform
- * one number into another.
- *
- * @n: The first number.
- * @m: The second number.
- *
- * Return: The count of differing bits.
+ * Return: number of bits.
  */
-
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int num1, unsigned long int num2)
 {
 	unsigned int nbits;
 
-	for (nbits = 0; n || m; n >>= 1, m >>= 1)
+	for (nbits = 0; num1 || num2; num1 >>= 1, num2 >>= 1)
 	{
-		if ((n & 1) != (m & 1))
+		if ((num1 & 1) != (num2 & 1))
 			nbits++;
 	}
 
